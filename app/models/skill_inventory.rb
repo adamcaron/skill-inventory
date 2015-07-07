@@ -40,4 +40,10 @@ class SkillInventory
       target["description"] = skill[:description]
     end
   end
+
+  def self.delete(id)
+    database.transaction do
+      database['skills'].delete_if { |skill| skill["id"] == id }
+    end
+  end
 end

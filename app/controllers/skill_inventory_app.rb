@@ -36,4 +36,9 @@ class SkillInventoryApp < Sinatra::Base
     SkillInventory.update(id.to_i, params[:skill])
     redirect "/skills/#{id}"
   end
+
+  delete '/skills/:id' do |id|
+    SkillInventory.delete(id.to_i)
+    redirect '/skills'
+  end
 end
