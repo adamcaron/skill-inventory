@@ -24,4 +24,12 @@ class SkillInventory
   def self.all
     raw_skills.map { |data| Skill.new(data) }
   end
+
+  def self.raw_skill(id)
+    raw_skills.find { |skill| skill["id"] == id }
+  end
+
+  def self.find(id)
+    Skill.new(raw_skill(id))
+  end
 end

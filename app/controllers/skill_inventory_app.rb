@@ -20,4 +20,9 @@ class SkillInventoryApp < Sinatra::Base
     SkillInventory.create(params[:skill])
     redirect '/skills'
   end
+
+  get '/skills/:id' do |id|
+    @skill = SkillInventory.find(id.to_i)
+    erb :show
+  end
 end
