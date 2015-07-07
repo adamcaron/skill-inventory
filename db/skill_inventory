@@ -1,0 +1,9 @@
+---
+skills:
+- id: 1
+  title: Tha Illest Skill
+  description: Such an ill skill.
+- id: 2
+  title: Another Skill?
+  description: Yes. This is the description for another skill.
+total: 2
