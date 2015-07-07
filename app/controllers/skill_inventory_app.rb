@@ -41,4 +41,8 @@ class SkillInventoryApp < Sinatra::Base
     SkillInventory.delete(id.to_i)
     redirect '/skills'
   end
+
+  not_found do
+    erb :error
+  end
 end
