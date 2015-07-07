@@ -2,4 +2,5 @@
 
 <% @skills.each do |skill| %>
   <h3>(<%= skill.id %>) <a href="/skills/<%= skill.id %>"><%= skill.title %></a></h3>
+  <a href="/skills/<%= skill.id %>/edit">Edit</a>
 <% end %>

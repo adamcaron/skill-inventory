@@ -2,7 +2,7 @@
 skills:
 - id: 1
   title: Tha Illest Skill
-  description: Such an ill skill.
+  description: Such an ill skill. And here's an updated description.
 - id: 2
   title: Another Skill?
   description: Yes. This is the description for another skill.
